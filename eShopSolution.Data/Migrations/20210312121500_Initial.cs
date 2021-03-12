@@ -56,9 +56,8 @@ namespace eShopSolution.Data.Migrations
                 name: "Languages",
                 columns: table => new
                 {
-                    Id = table.Column<int>(unicode: false, maxLength: 5, nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<int>(maxLength: 20, nullable: false),
+                    Id = table.Column<string>(unicode: false, maxLength: 5, nullable: false),
+                    Name = table.Column<string>(maxLength: 20, nullable: false),
                     IsDefault = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
@@ -155,7 +154,7 @@ namespace eShopSolution.Data.Migrations
                     SeoTitle = table.Column<string>(maxLength: 200, nullable: true),
                     SeoAlias = table.Column<string>(maxLength: 200, nullable: false),
                     CategoryId = table.Column<int>(nullable: false),
-                    LanguageId = table.Column<int>(unicode: false, maxLength: 5, nullable: false)
+                    LanguageId = table.Column<string>(unicode: false, maxLength: 5, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -261,7 +260,7 @@ namespace eShopSolution.Data.Migrations
                     SeoTitle = table.Column<string>(nullable: true),
                     SeoAlias = table.Column<string>(maxLength: 200, nullable: false),
                     ProductId = table.Column<int>(nullable: false),
-                    LanguageId = table.Column<int>(unicode: false, maxLength: 5, nullable: false)
+                    LanguageId = table.Column<string>(unicode: false, maxLength: 5, nullable: false)
                 },
                 constraints: table =>
                 {
