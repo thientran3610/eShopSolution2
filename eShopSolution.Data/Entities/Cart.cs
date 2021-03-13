@@ -7,7 +7,6 @@ namespace eShopSolution.Data.Entities
     public class Cart
     {
         public int Id { set; get; }
-        public int Card { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }
 
@@ -17,6 +16,8 @@ namespace eShopSolution.Data.Entities
         public DateTime DateCreated { get; set; }
 
         public Product Product { get; set; }
+        public AppUser AppUser { get; set; }
 
+        //testc cart
     }
 }

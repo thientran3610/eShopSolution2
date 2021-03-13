@@ -16,7 +16,10 @@ namespace eShopSolution.Data.Entities
         public string Provider { set; get; }
         public TransactionStatus Status { set; get; }
 
+        public Guid UserId { set; get; }
         public string ExternalTransactionId { set; get; }
+
+        public AppUser AppUser { get; set; }
 
     }
 }
