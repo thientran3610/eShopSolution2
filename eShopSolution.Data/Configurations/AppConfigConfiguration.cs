@@ -7,7 +7,7 @@ using System.Text;
 
 namespace eShopSolution.Data.Configurations
 {
-    class AppConfigConfiguration : IEntityTypeConfiguration<AppConfig>
+    public class AppConfigConfiguration : IEntityTypeConfiguration<AppConfig>
     {
         public void Configure(EntityTypeBuilder<AppConfig> builder)
         {
